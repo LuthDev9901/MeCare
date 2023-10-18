@@ -216,8 +216,8 @@ body {
     margin-top: 75px;
     /* text-align: center; */
     /* align-items: center; */
-    background-color: #0360D9;
-    max-height: 500px; /* Atur tinggi maksimum konten */
+    /* background-color: #0360D9; */
+    max-height: 3000px; /* Atur tinggi maksimum konten */
     overflow-y: auto; 
 }
 
