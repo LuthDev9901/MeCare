@@ -47,6 +47,6 @@ Please, use the scale and screen layout according to the rules below. So that th
 
 ### Scale and Layout
 
-- Change the size of text, apps, and other items: 100%
-- Display resolution: 1366 x 768
-- Display orientation: Landscape
+1. Change the size of text, apps, and other items: 100%
+2. Display resolution: 1366 x 768
+3. Display orientation: Landscape
