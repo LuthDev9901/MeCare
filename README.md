@@ -41,10 +41,11 @@ We at MeCare invite you to join us in discovering balance and happiness in life,
 
 Let's collaborate to make a difference and spread smiles! 😊
 
-### Notes
+## Notes
 
 Please, use the scale and screen layout according to the rules below. So that the appearance of the website can look neat and organized as it should be.
-**Scale and Layout**
+
+### Scale and Layout
 
 - Change the size of text, apps, and other items: 100%
 - Display resolution: 1366 x 768
