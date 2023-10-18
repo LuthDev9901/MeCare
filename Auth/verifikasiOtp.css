@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+body{
+  background-image: url(./asset/cover-background.png);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+}
+
+body::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container{
+    position: relative;
+    height: 500px;
+    width: 450px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.btn-close{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+.btn-close i{
+    font-size: 25px;
+    color: #0360D9;
+}
+
+.btn-close:hover i{
+    color: #2980b9;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+.sub-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sub-title span{
+    color: #021526;
+    font-weight: bold;
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #0360D9;
+    font-size: 20px;
+}
+
+.code-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+  
+.code{
+    caret-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #0360D9;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    text-align: center;
+    font-weight: 300;
+}
+  
+.code::-webkit-outer-spin-button, .code::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.btn-sign{
+    background-color: #0360D9;
+    height: 40px;
+    width: 320px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    cursor: pointer;
+    margin-top: 110px;
+  }
+  
+  .btn-sign:hover, .diskon-button:hover{
+  background-color: #2980b9;
+  }
+  
+.btn-sign a{
+    text-decoration: none;
+    color: white; 
+  }
+
+.send-again {
+    text-align: center; 
+}
+
+.text-kirim-ulang {
+    color: #021526;
+    font-size: 12px;
+  }
+  
+  .resend-link {
+    color: #0360D9;
+    text-decoration: none;
+  }
+  
+  .resend-link:hover {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  

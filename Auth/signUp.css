@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+body{
+  background-image: url(./asset/cover-background.png);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+}
+
+body::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container{
+    position: relative;
+    height: 580px;
+    width: 450px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.btn-close{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+.btn-close i{
+    font-size: 25px;
+    color: #0360D9;
+}
+
+.btn-close:hover i{
+    color: #2980b9;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+.sub-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sub-title span{
+    color: #0360D9;
+}
+
+.checkbox-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.input-field{
+    position: relative;
+    height: 40px;
+    width: 320px;
+    margin-top: 10px;
+  }
+  
+  .input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border:2px solid #021526;
+    outline: none;
+  }
+  
+  .input-field input:focus{
+    border-color: #0360D9;
+  }
+  
+  .input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #c8c8c8;
+    font-size: 23px;
+  }
+  
+  .input-field input:is(:focus, :valid) ~ i{
+    color: #838383;
+  }
+  
+  .input-field i.showHidePwPassword,  .input-field i.showHidePwConfirmPassword{
+    right: 0;
+    margin-right: 0px;
+    cursor: pointer;
+    padding: 8px;
+  }
+  
+  
+.checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 320px;
+    margin: 15px auto;
+  }
+
+.checkbox-content label{
+    margin-left: 5px;
+}
+  
+  .checkbox-content input{
+    accent-color: #0360D9;
+    cursor: pointer;
+  }
+
+  .btn-sign{
+    background-color: #0360D9;
+    height: 40px;
+    width: 320px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    cursor: pointer;
+    margin-top: 70px;
+  }
+  
+  .btn-sign:hover, .diskon-button:hover{
+  background-color: #2980b9;
+  }
+  
+  .btn-sign a{
+    text-decoration: none;
+    color: white; 
+  }
+
+  .title-bottom{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .title-bottom a, .checkbox-text a{
+    color: #0360D9;
+    text-decoration: none;
+  }
+
+  .title-bottom:hover a, .checkbox-text:hover a{
+    text-decoration: underline;
+  }

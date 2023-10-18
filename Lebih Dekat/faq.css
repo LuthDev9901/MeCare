@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: Roboto; /* Mengubah font menjadi Roboto */
+    margin: 0;
+  }
+/* Navbar */
+  .navbar {
+    position: fixed; /* Menjadikan navbar fixed */
+    top: 0;
+    width: calc(100% - 100px); /* Mengisi seluruh lebar layar kecuali 100px dari sisi kanan */
+    height: 80px; /* Mengatur tinggi navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px; /* Memberikan jarak 10px pada sisi atas dan bawah, serta 50px pada sisi kiri */
+    background-color: #E1EEFF; /* Mengubah warna background navbar */
+    color: #021526; /* Mengubah warna teks navbar */
+    z-index: 2;
+  }
+  
+  .navbar-left {
+    flex: 1;
+  }
+  
+  .navbar-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for MeCare text */
+  .mecare-text {
+    font-size: 40px; /* Mengatur ukuran font menjadi 40px */
+  }
+  
+  .navbar-center a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #021526; /* Menggunakan warna teks yang diinginkan (#021526) */
+    font-size: 20px; /* Mengubah ukuran font */
+    font-weight: normal; /* Mengubah berat huruf font menjadi regular */
+  }
+  
+  .navbar-center a.home-link {
+    color: #0360D9; /* Mengubah warna teks "Beranda" (#0360D9) */
+  }
+  
+  .navbar-center a:hover {
+    border-bottom: 2px solid #021526; /* Mengubah warna border-bottom saat hover */
+  }
+  
+  /* Style for navbar right */
+  .navbar-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 40px; /* Mengatur ukuran teks menjadi 40px */
+  }
+  
+  /* Style for all buttons in the navbar */
+  .navbar-button {
+    width: 150px; /* Mengubah lebar button */
+    height: 55px; /* Mengubah tinggi button */
+    padding: 10px 20px;
+    background-color: #0360D9;
+    border: none;
+    color: white;
+    font-size: 20px; /* Mengubah ukuran font */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Mengatur konten tengah dalam button */
+    border-radius: 10px; /* Memberikan radius sudut 10px pada tombol */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-button:hover {
+    background-color: #2980b9;
+    
+  }
+  
+  .button-text {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .btn-login{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .login-icon svg{
+    fill: white;
+  }
+  .navbar-logo{
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  .logo-me{
+    color: #021526;
+  }
+
+  .logo-care{
+   color:  #0360D9;
+  }
+  
+  /* Style for logo "Me" */
+
+  
+  /* Dropdown styles */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: #021526; /* Menggunakan warna teks yang diinginkan */
+    padding: 10px 20px;
+    font-size: 20px; /* Mengubah ukuran font */
+    font-weight: normal; /* Mengubah berat huruf font menjadi regular */
+    border: none;
+    cursor: pointer;
+    border-radius: 10px; /* Memberikan radius sudut 10px pada tombol */
+  }
+  
+  .dropbtn:hover {
+    background-color: #d6d2d2;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e1eeff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px; /* Memberikan radius sudut 10px pada tombol */
+    
+  }
+  
+  .dropdown-content a {
+    color: #021526;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px; /* Mengubah ukuran font */
+    font-weight: normal; /* Mengubah berat huruf font menjadi regular */
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  #judul-faq{
+    /* display: flex; */
+    /* background-color: #0360D9; */
+    margin: 180px 50px 0px 50px; /* Atas-Kanan-Bawah-Kiri */
+    text-align: center;
+  }
+
+  .judul h1{
+    font-size: 35px;
+  }
+
+#pencarian-faq{
+  margin: 0 50px;
+  background-color: #A5CCFF;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 150px;
+}
+
+
+.nama-pencarian h4, .info-ditanyakan h4{
+  font-size: 25px;
+}
+
+#info-ditanyakan{
+margin: 0 50px;
+text-align: center;
+margin-top: 100px;
+}
+
+
+
+.search-container {
+  /* justify-content: flex-end; Memindahkan ke kanan */
+  margin: 50px; 
+  display: flex;
+  /* margin-top: 130px; */
+}
+
+.search-text {
+  padding: 10px;
+  border: 1px solid #021526;
+  border-radius: 5px 0 0 5px;
+  width: 500px; /* 80% width untuk field text */
+  height: 28px;
+  margin-right: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.search-button {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #0360D9; /* Warna biru untuk field icon pencarian */
+  color: white;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.search-button:hover{
+  background-color: #2980b9;
+}
+
+.search-button i {
+  font-size: 24px; /* Ukuran ikon */
+}
+
+
+
+
+/* ########## START AKORDION ########## */
+#faq-akordion{
+    margin: 0 50px;
+    background-color: #A5CCFF;
+    max-height: fit-content;
+    border-radius: 15px;
+    margin-top: 35px;
+}
+
+.akordion{
+    border-radius: 15px;
+    min-height:0;
+    max-width: 700px;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding:30px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* margin: 50px; */
+    /* background: #fefffa; */
+    background-color: white;
+    /* box-shadow: 0 7px 7px 7px orange inset;        */
+}
+
+.container-faq h4{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;    
+}
+
+
+.container-faq{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.container-faq li{
+    position: relative;
+    padding-bottom: 4px;
+    padding-top: 18px;
+    border-top: 2px solid #0360D9;   
+    /* border-bottom: 2x solid #0360D9; */
+}
+
+.container-faq li input[type="checkbox"]{
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.container-faq li i{
+    position: absolute;
+    transform: translate(-6px,0);
+    margin-top: 16px;
+    right: 0;
+} 
+.container-faq li input[type=checkbox]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translateX(-50%);
+}
+
+.container-faq li input[type="checkbox"]:checked~i::before{
+    transform: translate(2px,0) rotate(45deg);
+    /* transform: translate(-50%, -50%) rotate(-45deg); */
+    /* transform: translate(-50%, -50%) rotate(45deg); */
+}
+.container-faq li input[type="checkbox"]:checked~i::after{
+    transform: translate(-2px,0) rotate(-45deg);
+}
+
+.container-faq li i::before,.container-faq li i::after{
+    content: "";
+    position: absolute;
+    background: #0360D9;
+    width: 3px;
+    height: 9px;
+}
+.container-faq li i::before{
+    transform: translate(-2px,0)rotate(45deg);
+}
+.container-faq li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+
+.container-faq p{
+  font-size: 16px;
+  /* color: rgba(48,69,92,0.8); */
+  color: #021526;
+  line-height: 26px;
+  letter-spacing: 1px;
+  position: relative;
+  padding: 0 11px;
+  max-height: 800px;
+  margin-top: 14px;
+  opacity: 1;
+  transform: translate(0,0);
+  overflow: hidden;     
+}
+
+.transition,.container-faq p, .container-faq li i:before, .container-faq li i:after {
+  transition: all 0.25s ease-in-out;
+  
+}
+.flipIn, .container-faq h4, .container-faq li {
+  animation: flipdown 0.5s ease both;
+}
+.container-faq li:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+.container-faq li:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+.container-faq li:nth-of-type(3) {
+  animation-delay: 1s;
+}
+.container-faq li:nth-of-type(4) {
+  animation-delay: 1.25s;
+}
+.container-faq li:nth-of-type(5) {
+  animation-delay: 1.50s;
+}
+.container-faq li:last-of-type {
+  padding-bottom: 0;
+}
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
+}
+/* ########## END AKORDION ########## */
+
+
+
+
+
+
+
+
+    #footer{
+        margin-top: 100px;
+        background-color: #E1EEFF;
+        height: 285px;
+        /* text-align: center; */
+        padding: 50px;
+        /* display: grid; */
+        /* justify-content: center; */
+        }
+      
+        .footer-konten-kiri p{
+          margin-top: -18px;
+          margin-bottom: 68px;
+        }
+      
+        .footer-kolom-grid{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
+      
+        .icon-sosmed img{
+          height: 30px;
+          width: 30px;
+          margin-right: 10px;
+        }
+      
+        .icon-sosmed{
+          display: flex;
+        }
+      
+        .footer-konten-tengah h3, .footer-konten-kanan h3{
+          font-size: 24px;
+        }
+      
+        .footer-konten-tengah, .footer-konten-kanan{
+          padding: 0 110px;
+        }
+      
+        .footer-konten-tengah a, .footer-konten-kanan a{
+          display: block;
+          margin-bottom: 10px;
+          color: #021526;
+          text-decoration: none;
+        }
+      
+        .footer-konten-tengah a:hover, .footer-konten-kanan a:hover{
+          color: #0360D9;
+        }

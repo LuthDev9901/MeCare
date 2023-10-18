@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: Roboto; /* Mengubah font menjadi Roboto */
+    margin: 0;
+  }
+/* Navbar */
+  .navbar {
+    position: fixed; /* Menjadikan navbar fixed */
+    top: 0;
+    width: calc(100% - 100px); /* Mengisi seluruh lebar layar kecuali 100px dari sisi kanan */
+    height: 80px; /* Mengatur tinggi navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px; /* Memberikan jarak 10px pada sisi atas dan bawah, serta 50px pada sisi kiri */
+    background-color: #E1EEFF; /* Mengubah warna background navbar */
+    color: #021526; /* Mengubah warna teks navbar */
+  }
+  
+  .navbar-left {
+    flex: 1;
+  }
+  
+  .navbar-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for MeCare text */
+  .mecare-text {
+    font-size: 40px; /* Mengatur ukuran font menjadi 40px */
+  }
+  
+  .navbar-center a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #021526; /* Menggunakan warna teks yang diinginkan (#021526) */
+    font-size: 20px; /* Mengubah ukuran font */
+    font-weight: normal; /* Mengubah berat huruf font menjadi regular */
+  }
+  
+  .navbar-center a.home-link {
+    color: #0360D9; /* Mengubah warna teks "Beranda" (#0360D9) */
+  }
+  
+  .navbar-center a:hover {
+    border-bottom: 2px solid #021526; /* Mengubah warna border-bottom saat hover */
+  }
+  
+  /* Style for navbar right */
+  .navbar-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 40px; /* Mengatur ukuran teks menjadi 40px */
+  }
+  
+  /* Style for all buttons in the navbar */
+  .navbar-button {
+    width: 150px; /* Mengubah lebar button */
+    height: 55px; /* Mengubah tinggi button */
+    padding: 10px 20px;
+    background-color: #0360D9;
+    border: none;
+    color: white;
+    font-size: 20px; /* Mengubah ukuran font */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Mengatur konten tengah dalam button */
+    border-radius: 10px; /* Memberikan radius sudut 10px pada tombol */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-button:hover {
+    background-color: #2980b9;
+    
+  }
+  
+  .button-text {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .btn-login{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .login-icon svg{
+    fill: white;
+  }
+  .navbar-logo{
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  .logo-me{
+    color: #021526;
+  }
+
+  .logo-care{
+   color:  #0360D9;
+  }
+  
+  /* Style for logo "Me" */
+
+  
+  /* Dropdown styles */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: #021526; /* Menggunakan warna teks yang diinginkan */
+    padding: 10px 20px;
+    font-size: 20px; /* Mengubah ukuran font */
+    font-weight: normal; /* Mengubah berat huruf font menjadi regular */
+    border: none;
+    cursor: pointer;
+    border-radius: 10px; /* Memberikan radius sudut 10px pada tombol */
+  }
+  
+  .dropbtn:hover {
+    background-color: #d6d2d2;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e1eeff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px; /* Memberikan radius sudut 10px pada tombol */
+    
+  }
+  
+  .dropdown-content a {
+    color: #021526;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px; /* Mengubah ukuran font */
+    font-weight: normal; /* Mengubah berat huruf font menjadi regular */
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  #btn-search{
+    display: flex;
+    justify-content: flex-end; /* Memindahkan ke kanan */
+    margin: 0 50px; /* Margin 50px di sisi kanan */
+    margin-top: 130px;
+  }
+
+  .search-container {
+    display: flex;
+  }
+  
+  .search-text {
+    padding: 10px;
+    border: 1px solid #021526;
+    border-radius: 5px 0 0 5px;
+    width: 300px; /* 80% width untuk field text */
+    height: 29px;
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #0360D9; /* Warna biru untuk field icon pencarian */
+    color: white;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .search-text:focus {
+    border: 1px solid #3498db; /* Ubah warna border saat focus */
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); /* Tambahkan efek shadow saat focus */
+  }
+  
+  .search-button:active {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Tambahkan efek shadow saat tombol ditekan */
+  }
+
+  .search-button:hover{
+    background-color: #2980b9;
+  }
+
+  .search-button i {
+    font-size: 24px; /* Ukuran ikon */
+  }
+
+.scroll-em{
+    display: block;
+    margin: 0 50px;
+    margin-top: 75px;
+    /* text-align: center; */
+    /* align-items: center; */
+    background-color: #0360D9;
+    max-height: 500px; /* Atur tinggi maksimum konten */
+    overflow-y: auto; 
+}
+
+.scroll-em::-webkit-scrollbar {
+    display: none; /* Untuk browser berbasis WebKit (seperti Chrome, Safari) */
+}
+
+.scroll-em {
+    scrollbar-width: thin; /* Untuk browser selain WebKit */
+    scrollbar-color: transparent transparent; /* Untuk browser selain WebKit */
+}
+
+
+
+.baris-em{
+    margin-top: -50px;
+  }
+
+.macam-edukasi-em{
+    margin-top: 80px;
+    /* margin: 0 50px; */
+    /* margin-left: 50px; */
+    font-size: xx-large;
+    margin-bottom: -30px;
+  }
+  
+  .edukasi-mental{
+  margin: 0 50px; /* Margin di kiri dan kanan */
+  color: #021526;
+  margin-top: 80px;
+  margin-bottom: -70px;
+  }
+  
+  .edukasi-mental h1{
+  font-size: 48px;
+  }
+  
+  .button-terbaru-em, .button-populer-em, .button-bipolar-em, .button-remaja-em{
+  background-color: white;
+  border-radius: 5px;
+  height: 30px;
+  font-weight: 40px;
+  text-align: center;
+  justify-content: center;
+  border-color: #021526;
+  }
+  
+  .button-terbaru-em:hover, .button-populer-em:hover, .button-bipolar-em:hover, .button-remaja-em:hover{
+    background-color: #0360D9;
+    border: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  .card-edukasi-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    /* margin: 0 50px; */
+  }
+  
+  .card-edukasi1{
+  margin-top: 20px;
+  Background: linear-gradient(to bottom, #EEEEEE 60%, #A5CCFF);
+  border-radius: 10px;
+  width: 405px;
+  height: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  .img-edukasi img{
+    width: 405px;
+    height: 350px;
+  }
+  
+  .judul-edukasi1, .isi-edukasi1, .judul-edukasi2, .isi-edukasi2, .judul-edukasi3, .isi-edukasi3, .baca-button1, .baca-button2, .baca-button3{
+    margin: 0 20px;
+  }
+  
+  .judul-edukasi h3{
+  font-size: 20px;
+  display: flex;
+  
+  }
+  
+  .baca-button1, .baca-button2, .baca-button3{
+    display: block;
+    height: 30px;
+    width: 60px;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #0360D9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  .baca-button1:hover, .baca-button2:hover, .baca-button3:hover {
+    background-color: #2980b9;
+  }
+  
+  .isi-edukasi1{
+    margin-top: 40px;
+  }
+  
+  .baca-button1{
+    margin-top: 70px;
+  }
+  
+  .baca-button2, .baca-button3{
+    margin-top: 50px;
+  }
+
+
+  #footer{
+    margin-top: 100px;
+    background-color: #E1EEFF;
+    height: 285px;
+    /* text-align: center; */
+    padding: 50px;
+    /* display: grid; */
+    /* justify-content: center; */
+    }
+  
+    .footer-konten-kiri p{
+      margin-top: -18px;
+      margin-bottom: 68px;
+    }
+  
+    .footer-kolom-grid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .icon-sosmed img{
+      height: 30px;
+      width: 30px;
+      margin-right: 10px;
+    }
+  
+    .icon-sosmed{
+      display: flex;
+    }
+  
+    .footer-konten-tengah h3, .footer-konten-kanan h3{
+      font-size: 24px;
+    }
+  
+    .footer-konten-tengah, .footer-konten-kanan{
+      padding: 0 110px;
+    }
+  
+    .footer-konten-tengah a, .footer-konten-kanan a{
+      display: block;
+      margin-bottom: 10px;
+      color: #021526;
+      text-decoration: none;
+    }
+  
+    .footer-konten-tengah a:hover, .footer-konten-kanan a:hover{
+      color: #0360D9;
+    }

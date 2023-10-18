@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: Roboto; /* Mengubah font menjadi Roboto */
+    margin: 0;
+  }
+/* Navbar */
+  .navbar {
+    position: fixed; /* Menjadikan navbar fixed */
+    top: 0;
+    width: calc(100% - 100px); /* Mengisi seluruh lebar layar kecuali 100px dari sisi kanan */
+    height: 80px; /* Mengatur tinggi navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px; /* Memberikan jarak 10px pada sisi atas dan bawah, serta 50px pada sisi kiri */
+    background-color: #E1EEFF; /* Mengubah warna background navbar */
+    color: #021526; /* Mengubah warna teks navbar */
+  }
+  
+  .navbar-left {
+    flex: 1;
+  }
+  
+  .navbar-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for MeCare text */
+  .mecare-text {
+    font-size: 40px; /* Mengatur ukuran font menjadi 40px */
+  }
+  
+  .navbar-center a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #021526; /* Menggunakan warna teks yang diinginkan (#021526) */
+    font-size: 20px; /* Mengubah ukuran font */
+    font-weight: normal; /* Mengubah berat huruf font menjadi regular */
+  }
+  
+  .navbar-center a.home-link {
+    color: #0360D9; /* Mengubah warna teks "Beranda" (#0360D9) */
+  }
+  
+  .navbar-center a:hover {
+    border-bottom: 2px solid #021526; /* Mengubah warna border-bottom saat hover */
+  }
+  
+  /* Style for navbar right */
+  .navbar-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 40px; /* Mengatur ukuran teks menjadi 40px */
+  }
+  
+  /* Style for all buttons in the navbar */
+  .navbar-button {
+    width: 150px; /* Mengubah lebar button */
+    height: 55px; /* Mengubah tinggi button */
+    padding: 10px 20px;
+    background-color: #0360D9;
+    border: none;
+    color: white;
+    font-size: 20px; /* Mengubah ukuran font */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Mengatur konten tengah dalam button */
+    border-radius: 10px; /* Memberikan radius sudut 10px pada tombol */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-button:hover {
+    background-color: #2980b9;
+    
+  }
+  
+  .button-text {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .btn-login{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .login-icon svg{
+    fill: white;
+  }
+  .navbar-logo{
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  .logo-me{
+    color: #021526;
+  }
+
+  .logo-care{
+   color:  #0360D9;
+  }
+  
+  /* Style for logo "Me" */
+
+  
+  /* Dropdown styles */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: #021526; /* Menggunakan warna teks yang diinginkan */
+    padding: 10px 20px;
+    font-size: 20px; /* Mengubah ukuran font */
+    font-weight: normal; /* Mengubah berat huruf font menjadi regular */
+    border: none;
+    cursor: pointer;
+    border-radius: 10px; /* Memberikan radius sudut 10px pada tombol */
+  }
+  
+  .dropbtn:hover {
+    background-color: #d6d2d2;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e1eeff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px; /* Memberikan radius sudut 10px pada tombol */
+    
+  }
+  
+  .dropdown-content a {
+    color: #021526;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px; /* Mengubah ukuran font */
+    font-weight: normal; /* Mengubah berat huruf font menjadi regular */
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+  /* header */
+
+  #header{
+    padding: 80px;
+    height: 450px;
+    background-color: #e1eeff;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+  }
+
+  .judul span{
+    color:  #0360D9;
+  }
+
+  .judul{
+    font-size: 60px;
+    margin-top: -200px;
+  }
+
+.header-left p{
+    margin-top: -50px;
+    line-height: 35px;
+    font-size: 24px;
+}
+
+.judul::after {
+  content: '';
+  display: block;
+  width: 185px; /* Sesuaikan panjang garis sesuai kebutuhan */
+  height: 3px; /* Sesuaikan ketebalan garis sesuai kebutuhan */
+  background-color: #0360D9; /* Sesuaikan warna garis sesuai kebutuhan */
+  border-radius: 50px; /* Menentukan tingkat lengkungan, sesuaikan sesuai keinginan */
+  margin-top: 1px; 
+}
+
+  .header-right img{
+    width: 96%;
+  }
+
+  .header-right{
+    margin-right: -40px;
+  }
+
+  #header-content{
+    background-color: #0360D9;
+    display: flex;
+    /* justify-content: space-between; */
+    text-align: center;
+    align-items: center;
+    line-height: 8%;
+    width: 100%;
+    gap: 70px;
+    color: white;
+  }
+
+  .vertical-line {
+    border-left: 1px solid white; /* Garis vertikal dengan ketebalan 2px */
+    height: 70px; /* Tinggi garis vertikal */
+  }
+
+  .dukungan-online h3, .konselor h3, .pengguna-aktif h3{
+    font-size: 45px;
+  }
+
+  .dukungan-online , .konselor , .pengguna-aktif{
+    margin-top: -18px;
+  }
+
+  .layanan-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6rem;
+    margin: 50px;
+    color: white;
+  }
+
+.layanan-1, .layanan-2, .layanan-3, .layanan-4, .layanan-5, .layanan-6, .layanan-7{
+  background-color: #0360D9;
+  border-radius: 15px;
+  width: 200px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.layanan1-icon, .layanan2-icon, .layanan3-icon, .layanan4-icon, .layanan5-icon, .layanan6-icon, .layanan7-icon{
+  background: #E1EEFF;
+  border-radius: 50px;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  justify-content: center;
+}
+
+.layanan-grid-row{
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+  margin: 50px;
+  justify-content: center;
+  color: white;
+}
+
+.nama-layanan{
+  font-size: 48px;
+  /* margin: 50px 50px -30px ; */
+  margin:0 50px;
+  margin-bottom: -30px;
+  margin-top: 75px;
+  color: #021526;
+  
+}
+
+.kumpulan-diskon-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 50px;
+}
+
+.card-diskon1{
+background: linear-gradient(to bottom, #EEEEEE, #A5CCFF);
+border-radius: 15px;
+width: 405px;
+height: 275px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+
+}
+
+.diskon-detail-grid{
+display: grid;
+grid-template-rows: repeat(2, 1fr);
+gap: 0px;
+/* align-items: center; */
+/* justify-content: center; */
+}
+
+.nama-diskon{
+margin-left: 20px;
+font-size: 28px;
+justify-content: center;
+color: #021526;
+
+}
+
+.diskon-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 20px;
+  margin-top: -55px;
+  align-items: center;
+}
+
+.diskon-logo img{
+  height: 20%;
+  margin-left: -24px;
+}
+
+.percentage, .discount-code {
+  border: 2px solid #021526;
+  /* padding: 10px; */
+  text-align: center;
+  justify-items: center;
+  width: 225px;
+  height: 60px;
+  /* gap: 0; */
+}
+
+.percentage{
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 3.5rem;
+  font-size: 20px;
+  justify-content: center;
+  /* text-align: center; */
+  align-items: center;
+}
+
+.DiscountUpTo{
+  text-align: left;
+  color: #0360D9;
+  margin-top: 19px;
+  /* justify-content: center; */
+}
+
+.diskon-persen{
+  font-size: 30px;
+  text-align: center;
+  color: #DB0069;
+}
+
+.discount-code{
+  border-radius: 0px 0px 10px 10px;
+  line-height: 10px;
+  color: #0360D9;
+}
+
+.discount-code h5{
+  margin-top: 8px;
+}
+
+.discount-code h3{
+  color: #DB0069;
+  font-size: 24px;
+}
+
+.container-pm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.penawaran-menarik, .lihat-semua {
+margin: 0 50px; /* Margin di kiri dan kanan */
+color: #021526;
+margin-top: -20px;
+margin-bottom: -70px;
+}
+
+.penawaran-menarik h1{
+font-size: 48px;
+}
+
+.lihat-semua a{
+  text-decoration: none;
+  color: #021526;
+}
+
+.lihat-semua a:hover{
+  color: #0360D9;
+}
+
+#Konselor-Berlisensi{
+background-color: #A5CCFF;
+/* margin: 0 50px; */
+margin: 100px 50px;
+border-radius: 15px;
+height: 300px;
+text-align: center;
+padding: 20px;
+display: grid;
+justify-content: center;
+}
+
+.judul-lisensi, .subjudul-lisensi{
+display: flex;
+justify-content: center;
+margin-bottom: 20px;
+}
+
+.judul-lisensi{
+  margin-top: 5px;
+}
+
+.subjudul-lisensi{
+  margin-top: -40px;
+}
+
+.judul-lisensi h1{
+  font-size: 34px;
+  margin-bottom: -30px;
+}
+
+.konselor-button{
+  display: block;
+  margin: 0 auto;
+  padding: 0px 35px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #0360D9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.konselor-button:hover {
+  background-color: #2980b9;
+}
+
+.container-em {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.edukasi-mental, .lihat-semua-em {
+margin: 0 50px; /* Margin di kiri dan kanan */
+color: #021526;
+margin-top: -50px;
+margin-bottom: -70px;
+}
+
+.edukasi-mental h1{
+font-size: 48px;
+}
+
+.lihat-semua-em a{
+  text-decoration: none;
+  color: #021526;
+}
+
+.lihat-semua-em a:hover{
+  color: #0360D9;
+}
+
+.pilihan-em-grid{
+  margin: 0 50px;
+  margin-top: 50px;
+}
+
+.button-terbaru-em, .button-populer-em, .button-bipolar-em, .button-remaja-em{
+background-color: white;
+border-radius: 5px;
+height: 30px;
+font-weight: 40px;
+text-align: center;
+justify-content: center;
+border-color: #021526;
+}
+
+.button-terbaru-em:hover, .button-populer-em:hover, .button-bipolar-em:hover, .button-remaja-em:hover{
+  background-color: #0360D9;
+  border: none;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.card-edukasi-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 0 50px;
+}
+
+.card-edukasi1{
+margin-top: 20px;
+Background: linear-gradient(to bottom, #EEEEEE 60%, #A5CCFF);
+border-radius: 10px;
+width: 405px;
+height: 600px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.img-edukasi img{
+  width: 405px;
+  height: 350px;
+}
+
+.judul-edukasi1, .isi-edukasi1, .judul-edukasi2, .isi-edukasi2, .judul-edukasi3, .isi-edukasi3, .baca-button1, .baca-button2, .baca-button3{
+  margin: 0 20px;
+}
+
+.judul-edukasi h3{
+font-size: 20px;
+display: flex;
+
+}
+
+.baca-button1, .baca-button2, .baca-button3{
+  display: block;
+  height: 30px;
+  width: 60px;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: #0360D9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.baca-button1:hover, .baca-button2:hover, .baca-button3:hover {
+  background-color: #2980b9;
+}
+
+.isi-edukasi1{
+  margin-top: 40px;
+}
+
+.baca-button1{
+  margin-top: 70px;
+}
+
+.baca-button2, .baca-button3{
+  margin-top: 50px;
+}
+
+
+#footer{
+  margin-top: 100px;
+  background-color: #E1EEFF;
+  height: 285px;
+  /* text-align: center; */
+  padding: 50px;
+  /* display: grid; */
+  /* justify-content: center; */
+  }
+
+  .footer-konten-kiri p{
+    margin-top: -18px;
+    margin-bottom: 68px;
+  }
+
+  .footer-kolom-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .icon-sosmed img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .icon-sosmed{
+    display: flex;
+  }
+
+  .footer-konten-tengah h3, .footer-konten-kanan h3{
+    font-size: 24px;
+  }
+
+  .footer-konten-tengah, .footer-konten-kanan{
+    padding: 0 110px;
+  }
+
+  .footer-konten-tengah a, .footer-konten-kanan a{
+    display: block;
+    margin-bottom: 10px;
+    color: #021526;
+    text-decoration: none;
+  }
+
+  .footer-konten-tengah a:hover, .footer-konten-kanan a:hover{
+    color: #0360D9;
+  }

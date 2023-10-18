@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-h8uqE/RFKzTquh5Eew93EqBjEMuA47l/7Adb7eAl9aKy9q9tLa9L3rNZflIYvtzXifl3e53bPf+D6IV3Jo1i1hA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="meKonseling-cari.css">
+    <title>MeKonseling-Cari</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <span class="navbar-logo"><span class="logo-me">Me</span><span class="logo-care">Care</span></span>
+        </div>
+        <div class="navbar-center">
+            <a href="#">Beranda</a>
+            <div class="dropdown">
+                <button class="dropbtn">Layanan</button>
+                <div class="dropdown-content">
+                    <a href="#">MeKonseling</a>
+                    <a href="#">MeForum</a>
+                    <a href="#">MeMood</a>
+                    <a href="#">MeTerapi</a>
+                    <a href="#">MePengingat</a>
+                    <a href="./html/meSurvei.html">MeSurvei</a>
+                    <a href="#">MeEdukasi</a>
+                </div>
+            </div>
+            <a href="#">Kontak</a>
+            <a href="#">Tentang Kami</a>
+        </div>
+        <div class="navbar-right">
+            <button class="navbar-button">
+                <div class=btn-login>
+                    <span class="button-text">Alexander</span>
+                    <div class="login-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M20.822 18.096c-3.439-.794-6.64-1.49-5.09-4.418 4.72-8.912 1.251-13.678-3.732-13.678-5.082 0-8.464 4.949-3.732 13.678 1.597 2.945-1.725 3.641-5.09 4.418-3.073.71-3.188 2.236-3.178 4.904l.004 1h23.99l.004-.969c.012-2.688-.092-4.222-3.176-4.935z" />
+                        </svg>
+                    </div>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <section id="isi-konten">
+        <div class="isi-konten-grid">
+            <div class="konten-kiri">
+                <div class="cari-konselor">
+                    <h3 class="cari-konselor-judul">Cari Konselor di Me<span>Care</span></h3>
+                    <p class="cari-konselor-subjudul">Layanan telemedisin yang siap siaga <br>untuk bantu kamu Mempunyai
+                        <br>Mental lebih sehat</p>
+                </div>
+                <div class="gambar-konselor">
+                    <img src="asset/meKonseling-cari.svg" alt="Konselor">
+                </div>
+                <div class="titik-tiga">
+                    <div class="lingkaran1"></div>
+                    <div class="lingkaran2"></div>
+                    <div class="lingkaran3"></div>
+                </div>
+                <div class="mengapa-mecare">
+                    <h6>Mengapa Harus di Me<span>Care</span>?</h6>
+                    <div class="mengapa-pilihan">
+                        <div class="konseling-konsultasi">
+                            <div class="bg-lingkaran"> <img src="../asset/mekonseling-konsultasi.svg" alt=""></div>
+                            <div class="text-container">
+                                <p>Konsultasikan keluhan kesehatan mental Anda dengan dokter terpercaya</p>
+                            </div>
+                        </div>
+                        <div class="konseling-kelola">
+                            <div class="bg-lingkaran"><img src="../asset/mekonseling-kelola.svg" alt=""></div>
+                            <div class="text-container">
+                                <p>Kelola suasana hati Anda dan dapatkan kemajuan setiap minggu dan bulan</p>
+                            </div>
+                        </div>
+                        <div class="konseling-dukungan">
+                            <div class="bg-lingkaran"><img src="../asset/mekonseling-dukungan.svg" alt=""></div>
+                            <div class="text-container">
+                                <p>Temukan dukungan untuk kesehatan mental Anda dengan bergabung dalam komunitas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-riwayat">
+                    <a href="#">Riwayat</a>
+                </div>
+            </div>
+
+            <div class="konten-kanan">
+                <div class="search-container">
+                    <input type="text" class="search-text" placeholder="Cari konselor, spesialis, atau gejala">
+                    <button class="search-button"><i class="fa fa-search"></i></button>
+                </div>
+
+                <div class="scroll-konselor">
+                    <!-- ON -->
+                    <div class="card-rekomendasi-grid">
+                        <div class="card-konselor1">
+                            <div class="card-konten-konselor-kiri">
+                                <div class="img-konselor">
+                                    <img src="./asset/img-konselor1.jpg" alt="Konselor">
+                                </div>
+                            </div>
+
+                            <div class="card-konten-konselor-kanan">
+                                <div class="nama-konselor-status">
+                                    <div class="nama-konselor">
+                                        <h4>Dr. Ahmad Wahyu <br>Distel Sp.KJ</h4>
+                                    </div>
+                                    <div class="status-on"></div>
+                                </div>
+
+                                <div class="bidang-keahlian">
+                                    <p>Sp, Jiwa</p>
+                                    <p class="gejala">Stres, Trauma <span>+more</span></p>
+                                </div>
+
+                                <div class="pengalaman-rating">
+                                    <div class="pengalaman">
+                                        <div class="img-pengalaman">
+                                            <img src="./asset/pengalaman.svg" alt="Pengalaman">
+                                        </div>
+                                        <div class="isi-pengalaman">
+                                            <p>10 Tahun</p>
+                                        </div>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="img-rating">
+                                            <img src="./asset/love.svg" alt="Rating">
+                                        </div>
+                                        <div class="isi-rating">
+                                            <p>100 %</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="harga-chat">
+                                    <div class="harga">
+                                        <div class="diskon">
+                                            <div class="harga-diskon">
+                                                <h4>Rp 100.000</h4>
+                                            </div>
+                                            <div class="img-diskon">
+                                                <img src="./asset/diskon.svg" alt="Diskon">
+                                            </div>
+                                        </div>
+                                        <div class="harga-normal">
+                                            <p>Rp 125.000</p>
+                                        </div>
+                                    </div>
+                                    <div class="btn-chat">
+                                        <a href="#">Chat</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card-konselor2">
+                            <div class="card-konten-konselor-kiri">
+                                <div class="img-konselor">
+                                    <img src="./asset/img-konselor2.jpg" alt="Konselor">
+                                </div>
+                            </div>
+
+                            <div class="card-konten-konselor-kanan">
+                                <div class="nama-konselor-status">
+                                    <div class="nama-konselor">
+                                        <h4>Ririn Aulya M.Psi, <br>Psikolog</h4>
+                                    </div>
+                                    <div class="status-on"></div>
+                                </div>
+                                <div class="bidang-keahlian">
+                                    <p>Psikolog Klinis</p>
+                                    <p class="gejala">Stres, Trauma <span>+more</span></p>
+                                </div>
+
+                                <div class="pengalaman-rating">
+                                    <div class="pengalaman">
+                                        <div class="img-pengalaman">
+                                            <img src="./asset/pengalaman.svg" alt="Pengalaman">
+                                        </div>
+                                        <div class="isi-pengalaman">
+                                            <p>10 Tahun</p>
+                                        </div>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="img-rating">
+                                            <img src="./asset/love.svg" alt="Rating">
+                                        </div>
+                                        <div class="isi-rating">
+                                            <p>100 %</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="harga-chat-nodiskon">
+                                    <div class="harga-nodiskon">
+                                        <h4>Rp 100.000</h4>
+                                    </div>
+                                    <div class="btn-chat-nodiskon">
+                                        <a href="#">Chat</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-rekomendasi-grid">
+                        <div class="card-konselor1">
+                            <div class="card-konten-konselor-kiri">
+                                <div class="img-konselor">
+                                    <img src="./asset/img-konselor3.jpg" alt="Konselor">
+                                </div>
+                            </div>
+
+                            <div class="card-konten-konselor-kanan">
+                                <div class="nama-konselor-status">
+                                    <div class="nama-konselor">
+                                        <h4>Gatot Perkasa <br>M.Psi, Psikolog</h4>
+                                    </div>
+                                    <div class="status-on"></div>
+                                </div>
+
+                                <div class="bidang-keahlian">
+                                    <p>Sp, Jiwa</p>
+                                    <p class="gejala">Stres, Trauma <span>+more</span></p>
+                                </div>
+
+                                <div class="pengalaman-rating">
+                                    <div class="pengalaman">
+                                        <div class="img-pengalaman">
+                                            <img src="./asset/pengalaman.svg" alt="Pengalaman">
+                                        </div>
+                                        <div class="isi-pengalaman">
+                                            <p>10 Tahun</p>
+                                        </div>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="img-rating">
+                                            <img src="./asset/love.svg" alt="Rating">
+                                        </div>
+                                        <div class="isi-rating">
+                                            <p>100 %</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="harga-chat">
+                                    <div class="harga">
+                                        <div class="diskon">
+                                            <div class="harga-diskon">
+                                                <h4>Rp 100.000</h4>
+                                            </div>
+                                            <div class="img-diskon">
+                                                <img src="./asset/diskon.svg" alt="Diskon">
+                                            </div>
+                                        </div>
+                                        <div class="harga-normal">
+                                            <p>Rp 125.000</p>
+                                        </div>
+                                    </div>
+                                    <div class="btn-chat">
+                                        <a href="#">Chat</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card-konselor2">
+                            <div class="card-konten-konselor-kiri">
+                                <div class="img-konselor">
+                                    <img src="./asset/img-konselor4.jpg" alt="Konselor">
+                                </div>
+                            </div>
+
+                            <div class="card-konten-konselor-kanan">
+                                <div class="nama-konselor-status">
+                                    <div class="nama-konselor">
+                                        <h4>Dr. Linda Amelia <br>Putri Sp.KJ</h4>
+                                    </div>
+                                    <div class="status-on"></div>
+                                </div>
+                                <div class="bidang-keahlian">
+                                    <p>Psikolog Klinis</p>
+                                    <p class="gejala">Stres, Trauma <span>+more</span></p>
+                                </div>
+
+                                <div class="pengalaman-rating">
+                                    <div class="pengalaman">
+                                        <div class="img-pengalaman">
+                                            <img src="./asset/pengalaman.svg" alt="Pengalaman">
+                                        </div>
+                                        <div class="isi-pengalaman">
+                                            <p>10 Tahun</p>
+                                        </div>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="img-rating">
+                                            <img src="./asset/love.svg" alt="Rating">
+                                        </div>
+                                        <div class="isi-rating">
+                                            <p>100 %</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="harga-chat-nodiskon">
+                                    <div class="harga-nodiskon">
+                                        <h4>Rp 100.000</h4>
+                                    </div>
+                                    <div class="btn-chat-nodiskon">
+                                        <a href="#">Chat</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <!-- OFF -->
+                    <div class="card-rekomendasi-grid">
+                        <div class="card-konselor1">
+                            <div class="card-konten-konselor-kiri">
+                                <div class="img-konselor">
+                                    <img src="./asset/img-konselor1.jpg" alt="Konselor">
+                                </div>
+                            </div>
+
+                            <div class="card-konten-konselor-kanan">
+                                <div class="nama-konselor-status">
+                                    <div class="nama-konselor">
+                                        <h4>Dr. Ahmad Wahyu <br>Distel Sp.KJ</h4>
+
+                                    </div>
+                                    <div class="status-off"></div>
+                                </div>
+
+                                <div class="bidang-keahlian">
+                                    <p>Sp, Jiwa</p>
+                                    <p class="gejala">Stres, Trauma <span>+more</span></p>
+                                </div>
+
+                                <div class="pengalaman-rating">
+                                    <div class="pengalaman">
+                                        <div class="img-pengalaman">
+                                            <img src="./asset/pengalaman.svg" alt="Pengalaman">
+                                        </div>
+                                        <div class="isi-pengalaman">
+                                            <p>10 Tahun</p>
+                                        </div>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="img-rating">
+                                            <img src="./asset/love.svg" alt="Rating">
+                                        </div>
+                                        <div class="isi-rating">
+                                            <p>100 %</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="jam">
+                                    <div class="jam-masuk">
+                                        <div class="img-jam">
+                                            <img src="./asset/jam.svg" alt="Jam">
+                                        </div>
+                                        <div class="isi-jam">
+                                            <p>Tersedia Kembali Mon, 11:00 - 13:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="harga-chat-off">
+                                    <div class="harga-off">
+                                        <div class="diskon-off">
+                                            <div class="harga-diskon-off">
+                                                <h4>Rp 100.000</h4>
+                                            </div>
+                                            <div class="img-diskon-off">
+                                                <img src="./asset/diskon.svg" alt="Diskon">
+                                            </div>
+                                        </div>
+                                        <div class="harga-normal-off">
+                                            <p>Rp 125.000</p>
+                                        </div>
+                                    </div>
+                                    <div class="btn-chat-off">
+                                        <a href="#">Offline</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card-konselor2">
+                            <div class="card-konten-konselor-kiri">
+                                <div class="img-konselor">
+                                    <img src="./asset/img-konselor2.jpg" alt="Konselor">
+                                </div>
+                            </div>
+
+                            <div class="card-konten-konselor-kanan">
+                                <div class="nama-konselor-status">
+                                    <div class="nama-konselor">
+                                        <h4>Ririn Aulya M.Psi, <br>Psikolog</h4>
+                                    </div>
+                                    <div class="status-off"></div>
+                                </div>
+                                <div class="bidang-keahlian">
+                                    <p>Psikolog Klinis</p>
+                                    <p class="gejala">Stres, Trauma <span>+more</span></p>
+                                </div>
+
+                                <div class="pengalaman-rating">
+                                    <div class="pengalaman">
+                                        <div class="img-pengalaman">
+                                            <img src="./asset/pengalaman.svg" alt="Pengalaman">
+                                        </div>
+                                        <div class="isi-pengalaman">
+                                            <p>10 Tahun</p>
+                                        </div>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="img-rating">
+                                            <img src="./asset/love.svg" alt="Rating">
+                                        </div>
+                                        <div class="isi-rating">
+                                            <p>100 %</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="jam">
+                                    <div class="jam-masuk">
+                                        <div class="img-jam">
+                                            <img src="./asset/jam.svg" alt="Jam">
+                                        </div>
+                                        <div class="isi-jam">
+                                            <p>Tersedia Kembali Mon, 11:00 - 13:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="harga-chat-nodiskon-off">
+                                    <div class="harga-nodiskon-off">
+                                        <h4>Rp 100.000</h4>
+                                    </div>
+                                    <div class="btn-chat-nodiskon-off">
+                                        <a href="#">Offline</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-rekomendasi-grid">
+                        <div class="card-konselor1">
+                            <div class="card-konten-konselor-kiri">
+                                <div class="img-konselor">
+                                    <img src="./asset/img-konselor3.jpg" alt="Konselor">
+                                </div>
+                            </div>
+
+                            <div class="card-konten-konselor-kanan">
+                                <div class="nama-konselor-status">
+                                    <div class="nama-konselor">
+                                        <h4>Gatot Perkasa <br>M.Psi, Psikolog</h4>
+
+                                    </div>
+                                    <div class="status-off"></div>
+                                </div>
+
+                                <div class="bidang-keahlian">
+                                    <p>Sp, Jiwa</p>
+                                    <p class="gejala">Stres, Trauma <span>+more</span></p>
+                                </div>
+
+                                <div class="pengalaman-rating">
+                                    <div class="pengalaman">
+                                        <div class="img-pengalaman">
+                                            <img src="./asset/pengalaman.svg" alt="Pengalaman">
+                                        </div>
+                                        <div class="isi-pengalaman">
+                                            <p>10 Tahun</p>
+                                        </div>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="img-rating">
+                                            <img src="./asset/love.svg" alt="Rating">
+                                        </div>
+                                        <div class="isi-rating">
+                                            <p>100 %</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="jam">
+                                    <div class="jam-masuk">
+                                        <div class="img-jam">
+                                            <img src="./asset/jam.svg" alt="Jam">
+                                        </div>
+                                        <div class="isi-jam">
+                                            <p>Tersedia Kembali Mon, 11:00 - 13:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="harga-chat-off">
+                                    <div class="harga-off">
+                                        <div class="diskon-off">
+                                            <div class="harga-diskon-off">
+                                                <h4>Rp 100.000</h4>
+                                            </div>
+                                            <div class="img-diskon-off">
+                                                <img src="./asset/diskon.svg" alt="Diskon">
+                                            </div>
+                                        </div>
+                                        <div class="harga-normal-off">
+                                            <p>Rp 125.000</p>
+                                        </div>
+                                    </div>
+                                    <div class="btn-chat-off">
+                                        <a href="#">Offline</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card-konselor2">
+                            <div class="card-konten-konselor-kiri">
+                                <div class="img-konselor">
+                                    <img src="./asset/img-konselor4.jpg" alt="Konselor">
+                                </div>
+                            </div>
+
+                            <div class="card-konten-konselor-kanan">
+                                <div class="nama-konselor-status">
+                                    <div class="nama-konselor">
+                                        <h4>Dr. Linda Amelia <br>Putri Sp.KJ</h4>
+                                    </div>
+                                    <div class="status-off"></div>
+                                </div>
+                                <div class="bidang-keahlian">
+                                    <p>Psikolog Klinis</p>
+                                    <p class="gejala">Stres, Trauma <span>+more</span></p>
+                                </div>
+
+                                <div class="pengalaman-rating">
+                                    <div class="pengalaman">
+                                        <div class="img-pengalaman">
+                                            <img src="./asset/pengalaman.svg" alt="Pengalaman">
+                                        </div>
+                                        <div class="isi-pengalaman">
+                                            <p>10 Tahun</p>
+                                        </div>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="img-rating">
+                                            <img src="./asset/love.svg" alt="Rating">
+                                        </div>
+                                        <div class="isi-rating">
+                                            <p>100 %</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="jam">
+                                    <div class="jam-masuk">
+                                        <div class="img-jam">
+                                            <img src="./asset/jam.svg" alt="Jam">
+                                        </div>
+                                        <div class="isi-jam">
+                                            <p>Tersedia Kembali Mon, 11:00 - 13:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="harga-chat-nodiskon-off">
+                                    <div class="harga-nodiskon-off">
+                                        <h4>Rp 100.000</h4>
+                                    </div>
+                                    <div class="btn-chat-nodiskon-off">
+                                        <a href="#">Offline</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer id="footer">
+        <div class="footer-kolom-grid">
+            <div class="footer-konten-kiri">
+                <span class="navbar-logo"><span class="logo-me">Me</span><span class="logo-care">Care</span></span>
+                <h2>Great Place to Receive <br>Mental Treatment</h2>
+                <p>MeCare is most focused on helping you <br>find your most beautiful smile</p>
+                <h4>Tetap Terhubung dengan Kami</h4>
+                <div class="icon-sosmed">
+                    <a href="https://instagram.com" target="_blank"><img src="../asset/instagram-icon.png"
+                            alt="Instagram"></a>
+                    <a href="https://facebook.com" target="_blank"><img src="../asset/facebook-icon.png"
+                            alt="Facebook"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="../asset/x-icon.png" alt="Twitter"></a>
+                    <a href="https://youtube.com" target="_blank"><img src="../asset/youtube-icon.png"
+                            alt="Youtube"></a>
+                    <a href="https://tiktok.com" target="_blank"><img src="../asset/tiktok-icon.png" alt="Tik Tok"></a>
+                </div>
+            </div>
+
+            <div class="footer-konten-tengah">
+                <h3>Lebih Dekat</h3>
+                <a href="#">Tentang MeCare</a>
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Syarat dan Ketentuan</a>
+                <a href="#">Hubungi Kami</a>
+                <a href="#">FAQ</a>
+            </div>
+
+            <div class="footer-konten-kanan">
+                <h3>Layanan MeCare</h3>
+                <a href="#">MeKonsultasi</a>
+                <a href="#">MeForum</a>
+                <a href="#">MeMood</a>
+                <a href="#">MeTerapi</a>
+                <a href="#">MePengingat</a>
+                <a href="./html/meSurvei.html">MeSurvei</a>
+                <a href="#">MeEdukasi</a>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

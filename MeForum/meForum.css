@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: Roboto; /* Mengubah font menjadi Roboto */
+    margin: 0;
+  }
+/* Navbar */
+  .navbar {
+    position: fixed; /* Menjadikan navbar fixed */
+    top: 0;
+    width: calc(100% - 100px); /* Mengisi seluruh lebar layar kecuali 100px dari sisi kanan */
+    height: 80px; /* Mengatur tinggi navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px; /* Memberikan jarak 10px pada sisi atas dan bawah, serta 50px pada sisi kiri */
+    background-color: #E1EEFF; /* Mengubah warna background navbar */
+    color: #021526; /* Mengubah warna teks navbar */
+  }
+  
+  .navbar-left {
+    flex: 1;
+  }
+  
+  .navbar-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for MeCare text */
+  .mecare-text {
+    font-size: 40px; /* Mengatur ukuran font menjadi 40px */
+  }
+  
+  .navbar-center a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #021526; /* Menggunakan warna teks yang diinginkan (#021526) */
+    font-size: 20px; /* Mengubah ukuran font */
+    font-weight: normal; /* Mengubah berat huruf font menjadi regular */
+  }
+  
+  .navbar-center a.home-link {
+    color: #0360D9; /* Mengubah warna teks "Beranda" (#0360D9) */
+  }
+  
+  .navbar-center a:hover {
+    border-bottom: 2px solid #021526; /* Mengubah warna border-bottom saat hover */
+  }
+  
+  /* Style for navbar right */
+  .navbar-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 40px; /* Mengatur ukuran teks menjadi 40px */
+  }
+  
+  /* Style for all buttons in the navbar */
+  .navbar-button {
+    width: 150px; /* Mengubah lebar button */
+    height: 55px; /* Mengubah tinggi button */
+    padding: 10px 20px;
+    background-color: #0360D9;
+    border: none;
+    color: white;
+    font-size: 20px; /* Mengubah ukuran font */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Mengatur konten tengah dalam button */
+    border-radius: 10px; /* Memberikan radius sudut 10px pada tombol */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-button:hover {
+    background-color: #2980b9;
+    
+  }
+  
+  .button-text {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .btn-login{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .login-icon svg{
+    fill: white;
+  }
+  .navbar-logo{
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  .logo-me{
+    color: #021526;
+  }
+
+  .logo-care{
+   color:  #0360D9;
+  }
+  
+  /* Style for logo "Me" */
+
+  
+  /* Dropdown styles */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: #021526; /* Menggunakan warna teks yang diinginkan */
+    padding: 10px 20px;
+    font-size: 20px; /* Mengubah ukuran font */
+    font-weight: normal; /* Mengubah berat huruf font menjadi regular */
+    border: none;
+    cursor: pointer;
+    border-radius: 10px; /* Memberikan radius sudut 10px pada tombol */
+  }
+  
+  .dropbtn:hover {
+    background-color: #d6d2d2;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e1eeff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px; /* Memberikan radius sudut 10px pada tombol */
+    
+  }
+  
+  .dropdown-content a {
+    color: #021526;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px; /* Mengubah ukuran font */
+    font-weight: normal; /* Mengubah berat huruf font menjadi regular */
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.isi-konten-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0rem;
+}
+
+.konten-kiri{
+    /* margin-top: 400px; */
+    background-color: #A5CCFF;
+    /* width: 450px; */
+    width: 570px;
+    height: 775px;
+    /* height: 1000px; */
+    margin: 130px 50px 50px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.scroll-forum{
+    display: block;
+    margin-top: 50px;
+    /* background-color: #0360D9; */
+    max-height: 630px; /* Atur tinggi maksimum konten */
+    overflow-y: auto; 
+}
+
+.scroll-forum::-webkit-scrollbar {
+    display: none; /* Untuk browser berbasis WebKit (seperti Chrome, Safari) */
+}
+
+.scroll-forum {
+    scrollbar-width: thin; /* Untuk browser selain WebKit */
+    scrollbar-color: transparent transparent; /* Untuk browser selain WebKit */
+}
+
+.card-forum{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0rem;
+    margin-bottom: 25px;
+    /* background-color: #021526; */
+    width: 425px;
+    margin-left: 72px;
+}
+
+.isi-forum h3{
+    margin-top: -4px;
+    font-size: 30px;
+}
+
+.judul-forum{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.pengikut{
+    margin-top: -24px;
+}
+
+.des-forum{
+    margin-top: -10px;
+}
+
+.btn-forum-lihat{
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    background-color: #0360D9;
+    /* color: #021526; */
+    text-decoration: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.btn-forum-lihat a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #021526;
+    font-weight: 500;
+}
+
+.btn-forum-lihat:hover{
+    background-color: #2980b9;
+}
+
+.btn-forum-gabung{
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    background-color: #163048;
+    /* color: #021526; */
+    text-decoration: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.btn-forum-gabung a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.btn-forum-gabung:hover{
+    background-color: #0360D9;
+}
+
+
+
+/* ########## START BACKGROUND ########## */
+.mechat img{
+  width: 580px;
+  height: 810.5px;
+  margin-left: 22.5px;
+}
+
+.mechat{
+  margin-top: 130px;
+}
+/* ########## END BACKGROUND ########## */
+
+
+/* ########## START HEADER BACKGROUND ########## */
+.chat-header {
+  margin-left: 32px;
+  margin-top: -801px;
+  width: 537px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.chat-header i {
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.header-icons i {
+  margin-left: 35px;
+}
+/* ########## END HEADER BACKGROUND ########## */
+
+
+/* ########## START MIC BACKGROUND ########## */
+.mic{
+  display: flex;
+  /* justify-content: space-between; */
+  width: 537px;
+  margin-left: 44px;
+  margin-top: 600px;
+  justify-content: flex-end;
+
+}
+/* ########## END MIC BACKGROUND ########## */
+
+
+/* ########## START TEXT FIELD BACKGROUND ########## */
+.textfield-send{
+  display: flex;
+  justify-content: space-between;
+  width: 537px;
+  margin-left: 44px;
+  margin-top: 20px;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  /* border: 1.5px solid #021526; */
+  border-radius: 20px;
+  padding: 5px;
+  width: 450px;
+  background-color: white;
+}
+
+.chat-input i {
+  margin: 0 5px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.chat-input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 18px;
+}
+
+.send-icon, .mic-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+}
+
+.send-icon i, .mic-icon i{
+font-size: 22px;
+}
+
+.send-icon:hover, .mic-icon:hover{
+  background-color: #2980b9;
+}
+/* ########## END TEXT FIELD BACKGROUND ########## */
+
+
+
+
+#footer{
+  margin-top: 80px;
+  background-color: #E1EEFF;
+  height: 285px;
+  padding: 50px;
+  }
+
+  .footer-konten-kiri p{
+    margin-top: -18px;
+    margin-bottom: 68px;
+  }
+
+  .footer-kolom-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .icon-sosmed img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .icon-sosmed{
+    display: flex;
+  }
+
+  .footer-konten-tengah h3, .footer-konten-kanan h3{
+    font-size: 24px;
+  }
+
+  .footer-konten-tengah, .footer-konten-kanan{
+    padding: 0 110px;
+  }
+
+  .footer-konten-tengah a, .footer-konten-kanan a{
+    display: block;
+    margin-bottom: 10px;
+    color: #021526;
+    text-decoration: none;
+  }
+
+  .footer-konten-tengah a:hover, .footer-konten-kanan a:hover{
+    color: #0360D9;
+  }
