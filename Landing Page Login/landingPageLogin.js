@@ -12,7 +12,7 @@
 
 function logoutWarning() {
     alert('Anda Akan LogOut. Apakah Anda Yakin?');
-    window.location.href = '../landingPage.html';
+    window.location.href = '../index.html';
 }
 
 // onclick = "window.location.href = './html/meEdukasi-baca.html'"
