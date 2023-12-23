@@ -4,7 +4,7 @@ Welcome to BhinTech Jaya - Group 3, part of Class A (Afternoon Session), dedicat
 
 ## About MeCare 💙
 
-Welcome to MeCare, a dedicated online platform that acts as a steadfast companion for those struggling with bipolar disorder! We firmly believe that every individual possesses their most radiant smile within, and MeCare is here to assist you in discovering it. Our motto encapsulates our mission: "MeHealth is most focused on helping you find your most beautiful smile."
+Welcome to MeCare, a dedicated online platform that acts as a steadfast companion for those struggling with bipolar disorder! We firmly believe that every individual possesses their most radiant smile within, and MeCare is here to assist you in discovering it. Our motto encapsulates our mission: "MeCare is most focused on helping you find your most beautiful smile."
 
 Let's explore MeCare's prominent features:
 
